@@ -1,0 +1,1692 @@
+@mixin transi($s)
+  transition: all ease $s
+  -webkit-transition: all ease $s
+  -moz-transition: all ease $s
+  -ms-transition: all ease $s
+  -o-transition: all ease $s
+@mixin clamp($n)
+  display: -webkit-box
+  -webkit-line-clamp: $n
+  overflow: hidden
+  -webkit-box-orient: vertical
+/*===========COLOR=========*/
+/*Color Primary*/
+$xanhduong: #2673b4
+$trang: #fff
+$den: #000
+$default: #12344D
+/*Color manually*/
+$brow: #545b62
+.show_items
+  position: absolute
+  z-index: 2
+  select
+    padding: 4px 0
+    margin-left: 5px
+#file
+  width: 100%
+  list-style: none
+  display: flex
+  flex-wrap: wrap
+  padding: 10px
+  position: relative
+  a
+    min-width: 200px
+    max-width: 250px
+    background-color: #6c757d
+    flex: 1 1 0%
+    padding: 10px
+    border-radius: 3px
+    cursor: pointer
+    transition: all ease .3s
+    margin: 10px
+    &:hover, &:active
+      background-color: #1b94ff
+    i
+      font-size: 45px
+      margin-right: 10px
+    .file-link
+      display: flex
+      align-items: center
+      div
+        overflow: hidden
+        color: #fff
+      .link_icon
+        flex: 1 1 0%
+      .details
+        flex: 2 1 0%
+        font-size: 17px
+        &::selection
+          background-color: transparent
+.custom_tabs
+  li
+    &:first-child a
+      border-radius: 4px 0 0 4px
+
+    &:last-child a
+      border-radius: 0 4px 4px 0
+  a
+    padding: 7px 12px
+    color: #fff
+    background-color: #4ebefb
+    border-color: #4ebefb
+    outline: none
+    transition: all ease .2s
+    &:focus
+      border-color: #22a7f0
+      box-shadow: 0 0 0 0.2rem rgba(127, 210, 255, 0.52)
+    &:hover
+      border: 0px solid transparent
+      background-color: #22a7f0
+    &.active
+      color: #fff
+      background-color: #22a7f0
+      border-color: #22a7f0
+      box-shadow: 0 0 0 0.2rem rgba(127, 210, 255, 0.52)
+.info-admin
+  display: flex
+  align-items: center
+  img
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    overflow: hidden
+    margin-right: 10px
+    object-fit: cover
+.dropdowntable
+  background-color: transparent
+
+  svg
+    margin-right: 0px !important
+    width: 20px !important
+
+    path:last-child
+      color: #1b1b1b !important
+
+.dataTables_wrapper .dataTables_filter input
+  background-color: transparent
+  border: 1px solid #ddd
+  border-radius: 3px
+  padding: 3px
+  font-size: 15px
+
+table.dataTable
+  .row
+    color: #76838f
+
+  thead tr
+    background-color: #f8fafc
+
+    th
+      &:last-child
+        text-align: center
+
+      font-weight: 500
+      font-size: 15px
+      padding: 18px 8px !important
+
+      &:first-child
+        padding-left: 18px !important
+
+  tbody tr
+    .dropdown-item
+      padding: 7px 5px
+
+    td
+      &:last-child
+        text-align: center
+
+      border-bottom: 1px dashed #ececec
+
+.rotate
+  transform: rotate(45deg)
+#image_upload
+  padding: 0 !important
+.dashboard-table
+  width: 100%
+  background-color: #fff
+  border-radius: 5px
+
+  thead th
+    height: 60px
+    padding: 20px 25px
+    color: #455a64
+    font-size: 17px
+
+  b
+    font-size: 18px
+    color: #48465b
+
+  tbody tr
+    &:last-child td
+      border-bottom: none
+
+    td
+      padding: 10px 25px
+      border-bottom: .07rem dashed #ebedf2
+
+      &:nth-of-type(2), &:nth-of-type(3)
+        text-align: right
+
+      &:nth-of-type(2)
+        max-width: 300px
+        width: 300px
+
+      &:nth-of-type(3)
+        max-width: 150px
+        width: 150px
+
+.lds-ripples
+  display: inline-block
+  position: fixed
+  width: 100%
+  height: 100%
+
+  .lds-ripple
+    display: inline-block
+    position: relative
+    width: 64px
+    height: 64px
+    top: 50%
+    height: 64px
+    left: 50%
+
+.lds-ripple div
+  position: absolute
+  border: 4px solid #fff
+  opacity: 1
+  border-radius: 50%
+  animation-name: lds-ripple
+  animation-duration: 1s
+  animation-iteration-count: 2
+  animation-timing-function: cubic-bezier(0, 0.2, 0.8, 1)
+
+  &:nth-child(2)
+    animation-delay: -0.5s
+table
+  width: 100%
+@keyframes lds-ripple
+  0%
+    top: 28px
+    left: 28px
+    width: 0
+    height: 0
+    opacity: 1
+  100%
+    top: -1px
+    left: -1px
+    width: 58px
+    height: 58px
+    opacity: 0
+.badge
+  padding: .5em .75em
+  display: inline-block
+  font-size: 75%
+  font-weight: 700
+  line-height: 1
+  text-align: center
+  white-space: nowrap
+  vertical-align: baseline
+  border-radius: .25rem
+.badge-success-alt
+  background-color: #d7f2c2
+  color: #7bd235
+#toolbar
+  width: 100%
+  background-color: #e0e0e0
+  padding: 20px
+  margin: 0 5px
+  border-radius: 3px
+.panel
+  background-color: rgba(255, 255, 255, 0.9)
+  border-radius: 5px
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05)
+  margin-bottom: 20px
+  &.v2
+    .panel-title
+      padding: 0
+  &.widget.sidebar
+    padding: 12px 0
+    margin: 0
+    border-radius: 0
+    background-size: cover
+    background-position: 0px
+    background-repeat: no-repeat
+    .dimmer
+      background: linear-gradient(275deg, #242c32, rgba(36, 44, 50, 0.95) 34%, rgba(36, 44, 50, 0.7))
+    .avatar
+      width: 36px
+      height: 36px
+      object-fit: cover
+      float: left
+      margin-left: 12px
+      border: 0
+      position: relative
+      top: 3px
+      float: left
+      margin-left: 12px
+      transition: none
+      border-radius: 50%
+      margin-right: 10px
+    h2
+      color: #76838f
+      text-indent: 0px
+      z-index: 1
+      font-size: 22px
+      font-weight: 300
+      text-shadow: rgba(0, 0, 0, 0.15) 0 0 1px
+      position: relative
+      white-space: nowrap
+      padding-top: 6px
+  &.center
+    text-align: center
+  .panel-heading
+    border-bottom: 1px solid #e4eaec
+  .panel-title
+    padding: 20px
+    position: relative
+    svg
+      width: 35px
+      float: left
+      margin-right: 10px
+      &.slug__
+        position: absolute
+        top: 0
+        right: 0
+        width: 55px
+        padding: 20px
+        cursor: pointer
+        margin-right: 0
+      path
+        &:first-child
+          color: #adb5bd
+        &:last-child
+          color: #888
+    label
+      display: flex
+      align-items: center
+      font-weight: 600
+      font-size: 17px
+  .panel-body
+    padding: 0 20px 20px
+label
+  color: #76838f
+.input-group-text
+  width: 44px
+  display: flex
+  justify-content: center
+  background-color: transparent
+.treeview > svg
+  position: absolute
+  top: 19px
+  right: 15px
+  width: 12px
+  color: #76838f
+/*Treeview mobie*/
+.treeview-mobie
+  display: none
+  position: absolute
+  top: 0
+  right: -230px
+  width: 230px
+  background: linear-gradient(45deg, #353d47, #21292e)
+  -webkit-transition: all ease .2s
+  -ms-transition: all ease .2s
+  transition: all ease .2s
+  a
+    color: #76838f
+    padding: 15px 5px 15px 20px
+    display: block
+    font-size: 15px
+    -webkit-transition: all ease .2s
+    -ms-transition: all ease .2s
+    transition: all ease .2s
+    &:hover
+      color: #fff
+      background: #2a363b
+nav.sidebar-menu
+  width: 230px
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 5
+  overflow: hidden
+  background: #353d47
+  background: linear-gradient(45deg, #353d47, #21292e)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#353d47",endColorstr="#21292e",GradientType=1)
+  transition: all ease .3s
+  &.smll
+    width: 60px
+    overflow: visible
+    ul.list-treeview li.treeview
+      > a
+        overflow: hidden
+      .treeview-menu
+        display: none
+  #viewsite
+    display: block
+    padding: 30px 0
+    text-align: center
+    a
+      padding: 13px 48px
+      color: #fff
+      background-color: #76838f
+      border-radius: 4px
+  ul.list-treeview li
+    > svg
+      +transi(.3s)
+    &.header
+      color: #8d9ba0
+      background-color: #3d3c4a
+      padding: 10px 25px 10px 15px
+      display: block
+      font-size: 12px
+      cursor: default
+    &.treeview
+      position: relative
+      &.color_sidebar
+        > a
+          color: #fff !important
+          svg
+            color: #fff
+        > svg.viewa
+          transform: rotate(90deg)
+      &:hover .treeview-mobie
+        display: block
+      > a
+        padding: 15px 5px 15px 20px
+        display: block
+        color: #76838f
+        font-size: 15px
+        line-height: 20px
+        cursor: pointer
+        white-space: nowrap
+        -webkit-transition: all ease .2s
+        -ms-transition: all ease .2s
+        transition: all ease .2s
+        &::selection
+          background-color: transparent
+        &.color_sidebar
+          color: #fff !important
+          svg
+            color: #fff
+        &:hover
+          color: #fff !important
+          background: #2a363b
+          svg
+            color: #fff
+        svg
+          width: 20px
+          max-height: 22px
+          float: left
+          margin-right: 15px
+          color: #76838f
+          -webkit-transition: all ease .2s
+          -ms-transition: all ease .2s
+          transition: all ease .2s
+      .treeview-menu
+        position: relative
+        z-index: 15
+        width: 100%
+        z-index: 0
+        display: block
+        transition: .5s
+        max-height: 0
+        visibility: hidden
+        overflow: hidden
+        background-color: #272e34
+        &.menu-open
+          position: relative
+          transition: .5s
+          max-height: 200px
+          visibility: visible
+        svg
+          -webkit-transition: all ease .2s
+          -ms-transition: all ease .2s
+          transition: all ease .2s
+        > li
+          > a
+            padding: 15px 5px 15px 15px
+            display: block
+            color: #b8c7ce
+            font-size: 15px
+            &:hover
+              color: #fff
+              background: #2a363b
+    > svg
+      +transi(.3s)
+    &.header
+      color: #8d9ba0
+      background-color: #3d3c4a
+      padding: 10px 25px 10px 15px
+      display: block
+      font-size: 12px
+      cursor: default
+    &.treeview
+      position: relative
+      &.color_sidebar
+        > a
+          color: #fff !important
+          svg
+            color: #fff
+        > svg.viewa
+          transform: rotate(90deg)
+      &:hover .treeview-mobie
+        display: block
+      > a
+        padding: 15px 5px 15px 20px
+        display: block
+        color: #76838f
+        font-size: 15px
+        line-height: 20px
+        cursor: pointer
+        white-space: nowrap
+        -webkit-transition: all ease .2s
+        -ms-transition: all ease .2s
+        transition: all ease .2s
+        &::selection
+          background-color: transparent
+        &.color_sidebar
+          color: #fff !important
+          svg
+            color: #fff
+        &:hover
+          color: #fff !important
+          background: #2a363b
+          svg
+            color: #fff
+        svg
+          width: 20px
+          max-height: 22px
+          float: left
+          margin-right: 15px
+          color: #76838f
+          -webkit-transition: all ease .2s
+          -ms-transition: all ease .2s
+          transition: all ease .2s
+      .treeview-menu
+        position: relative
+        z-index: 15
+        width: 100%
+        z-index: 0
+        display: block
+        transition: .5s
+        max-height: 0
+        visibility: hidden
+        overflow: hidden
+        background-color: #272e34
+        &.menu-open
+          position: relative
+          transition: .5s
+          max-height: 200px
+          visibility: visible
+        svg
+          -webkit-transition: all ease .2s
+          -ms-transition: all ease .2s
+          transition: all ease .2s
+        > li
+          > a
+            padding: 15px 5px 15px 15px
+            display: block
+            color: #b8c7ce
+            font-size: 15px
+            &:hover
+              color: #fff
+              background: #2a363b
+main.content-wapper
+  margin-left: 230px
+  transition: all ease .3s
+  header
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 4
+    padding: 0px 30px 0px 230px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: rgba(241, 242, 247, 0.74)
+    transition: all ease .3s
+    .breadcrumb
+      margin-bottom: 4px
+      list-style: none
+      background-color: #fff
+      border-radius: 25px
+      position: relative
+      top: 2px
+      height: 34px
+      border: 1px solid #f9f9f9
+      font-size: 12px
+      padding: 4px 15px 4px 10px
+      svg
+        width: 12px
+        height: 12px
+        float: left
+        margin-right: 5px
+        color: #607D8B
+        &:hover, &:focus, &:active
+          color: #689fbb
+      ul
+        display: flex
+        align-items: center
+        li
+          margin-right: 5px
+          color: #607D8B
+          a
+            color: #607D8B
+            &::selection, &:hover, &:focus, &:active
+              color: #689fbb
+              background-color: transparent
+    .custom-menu
+      display: flex
+      align-items: center
+      padding: 8px 0
+      .dropdown
+        margin: 0 6px
+        button
+          background: transparent
+      .block-compartment
+        margin: 0 15px
+        height: 35px
+        width: 1px
+        background-color: #d8d8d8
+      &:after
+        content: ""
+        clear: both
+      img
+        width: 45px
+        height: 45px
+        object-fit: cover
+        border-radius: 50%
+/*Novication*/
+.novication
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 90px 1% 10px
+  .novi_master
+    display: flex
+    align-items: center
+    .btn
+      margin-right: 5px
+      box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25)
+  h2
+    display: flex
+    float: left
+    line-height: 39px
+    margin-bottom: 0px
+    margin-left: 20px
+    margin-right: 20px
+    font-size: 24px
+    color: #555
+    font-weight: 700
+    font-family: "Roboto",sans-serif
+  svg
+    width: 32px
+    float: left
+    margin-right: 10px
+  i
+    margin-right: 5px
+section
+  &.box-post
+    display: grid
+    grid-template-columns: 4fr 1.2fr
+    grid-column-gap: 10px
+    margin-top: 15px
+  &.content-custom
+    padding-top: 30px
+    background-color: #f2f3f8
+    .box
+      &.seo input
+        margin-bottom: 12px
+      border-radius: 4px
+      padding: 5px 10px
+      margin-bottom: 10px
+      .box-title
+        margin-bottom: 5px
+        h3
+          font-weight: 400
+          color: #404041
+      input[type="checkbox"]
+        border: 1px solid #ececec
+        background: #fff
+        color: #555
+        clear: none
+        cursor: pointer
+        display: inline-block
+        line-height: 0
+        height: 16px
+        margin: -4px 4px 0 0
+        padding: 0 !important
+        text-align: center
+        vertical-align: middle
+        width: 16px
+        min-width: 16px
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
+        transition: .05s border-color ease-in-out
+      .pr-status-posts
+        margin-bottom: 10px
+        letter-spacing: 0px
+        color: #4d4d4d
+        p
+          margin-bottom: 5px
+          cursor: default
+        a
+          float: right
+          color: #757575
+      select
+        padding: 5px 10px
+        border: 2px solid #5d78ff
+        border-radius: 2px
+  &.box-news
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-column-gap: 20px
+    .news-items
+      border-radius: 7px
+      position: relative
+      width: 100%
+      height: 100%
+      cursor: default
+      background-color: #fff
+      box-shadow: 0px 0px 13px 0px rgba(82, 63, 105, 0.05)
+      .news-items-head
+        padding: 0 25px
+        min-height: 60px
+        display: flex
+        align-items: center
+      .news-items-content
+        width: 100%
+        height: 134px
+        padding: 25px
+        display: flex
+        justify-content: space-between
+        h2, h4
+          color: #3d4465
+        h2
+          font-size: 35px
+        .news-items-widget
+          position: relative
+          display: flex
+          align-items: center
+          width: 50%
+          .news-items-widget_label
+            position: absolute
+            left: 25%
+            z-index: 2
+          .news-items-widget_bg
+            position: absolute
+            left: 0
+            z-index: 1
+            img
+              width: 120px
+              opacity: .6
+        .news-items-widget-data i
+          font-size: 30px
+  &.content-main
+    display: grid
+    grid-template-columns: 2.5fr 1.5fr
+    grid-column-gap: 20px
+    padding: 0 4%
+
+.tool
+  display: flex
+  align-items: center
+
+  select
+    width: auto
+    margin-right: 15px
+
+.tab-content
+  padding-bottom: 20px
+
+form thead label.selection
+  padding: 0 20px 0 0
+
+label.selection
+  margin-bottom: 0px
+  padding: 10px 20px 10px 0
+/*Edit Adminstration*/
+#frontend-admin
+  .admin-head
+    width: 100%
+    position: relative
+    border-radius: 8px
+    overflow: hidden
+    .bg-admin
+      padding-top: 25%
+      height: 100%
+      position: relative
+      z-index: 3
+      .dropify-wrapper
+        height: inherit
+        .dropify-preview
+          padding: 0
+          .dropify-render img
+            max-height: fit-content
+    .wrapper-info
+      width: 100%
+      height: 90px
+      background-color: rgba(0, 0, 0, 0.47)
+      position: absolute
+      z-index: 4
+      left: 0
+      bottom: 0
+      .avatar
+        width: 55px
+        height: 55px
+        border-radius: 50%
+        overflow: hidden
+        position: absolute
+        bottom: 17px
+        left: 17px
+        .dropify-wrapper
+          height: 55px
+        .dropify-infos
+          display: none
+    .admin-name, .admin-roles
+      color: #fff
+    .admin-name
+      position: absolute
+      bottom: 45px
+      left: 90px
+      font-size: 20px
+    .admin-roles
+      position: absolute
+      bottom: 25px
+      left: 90px
+      font-size: 15px
+    //Upload ảnh
+    .dropify-wrapper
+      border: none
+/*end*/
+/*===================nestable====================*/
+.cf:after
+  visibility: hidden
+  display: block
+  font-size: 0
+  content: " "
+  clear: both
+  height: 0
+.small
+  color: #666
+  font-size: 0.875em
+.large
+  font-size: 1.25em
+/**
+ * Nestable
+.dd
+  position: relative
+  display: block
+  margin: 0
+  padding: 0
+  max-width: 100%
+  list-style: none
+  font-size: 13px
+  line-height: 20px
+.pull-right
+  float: right
+.item_actions
+  z-index: 9
+  position: relative
+  top: 11px
+  right: 10px
+  .edit
+    margin-right: 5px
+.dd-list
+  display: block
+  position: relative
+  margin: 0
+  padding: 0
+  list-style: none
+  .dd-list
+    padding-left: 30px
+.dd-collapsed .dd-list
+  display: none
+.dd-item, .dd-empty, .dd-placeholder
+  display: block
+  position: relative
+  margin: 0
+  padding: 0
+  min-height: 20px
+  font-size: 13px
+  line-height: 20px
+.dd-handle
+  display: block
+  height: 50px
+  margin: 4px 0
+  padding: 14px 10px
+  color: #333
+  text-decoration: none
+  font-weight: bold
+  border: 1px solid #e5e5e5
+  background: #fafafa
+  -webkit-border-radius: 3px
+  border-radius: 3px
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  &:hover
+    color: #2ea8e5
+    background: #fff
+.dd-item > button
+  display: block
+  position: relative
+  cursor: pointer
+  float: left
+  width: 25px
+  height: 40px
+  margin: 5px 0
+  padding: 0
+  text-indent: 100%
+  white-space: nowrap
+  overflow: hidden
+  border: 0
+  background: transparent
+  font-size: 12px
+  line-height: 1
+  text-align: center
+  font-weight: bold
+  &:before
+    content: '+'
+    display: block
+    position: absolute
+    width: 100%
+    text-align: center
+    text-indent: 0
+  &[data-action="collapse"]:before
+    content: '-'
+.dd-placeholder
+  margin: 5px 0
+  padding: 0
+  min-height: 30px
+  background: #f2fbff
+  border: 1px dashed #b6bcbf
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+.dd-empty
+  margin: 5px 0
+  padding: 0
+  min-height: 30px
+  background: #f2fbff
+  border: 1px dashed #b6bcbf
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  border: 1px dashed #bbb
+  min-height: 100px
+  background-color: #e5e5e5
+  background-image: -webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), -webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff)
+  background-image: -moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), -moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff)
+  background-image: linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff)
+  background-size: 60px 60px
+  background-position: 0 0, 30px 30px
+.dd-dragel
+  position: absolute
+  pointer-events: none
+  z-index: 9999
+  > .dd-item .dd-handle
+    margin-top: 0
+  .dd-handle
+    -webkit-box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1)
+/**
+ * Nestable Extras
+.nestable-lists
+  display: block
+  clear: both
+  padding: 30px 0
+  width: 100%
+  border: 0
+  border-top: 2px solid #ddd
+  border-bottom: 2px solid #ddd
+#nestable-menu
+  padding: 0
+  margin: 20px 0
+#nestable-output, #nestable2-output
+  width: 100%
+  height: 7em
+  font-size: 0.75em
+  line-height: 1.333333em
+  font-family: Consolas, monospace
+  padding: 5px
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+#nestable2
+  .dd-handle
+    color: #fff
+    border: 1px solid #999
+    background: #bbb
+    background: -webkit-linear-gradient(top, #bbb 0%, #999 100%)
+    background: -moz-linear-gradient(top, #bbb 0%, #999 100%)
+    background: linear-gradient(top, #bbb 0%, #999 100%)
+    &:hover
+      background: #bbb
+  .dd-item > button:before
+    color: #fff
+@media only screen and (min-width: 700px)
+  .dd
+    float: left
+    width: 100%
+    + .dd
+      margin-left: 2%
+.dd-hover > .dd-handle
+  background: #2ea8e5 !important
+/**
+ * Nestable Draggable Handles
+.dd3-content
+  display: block
+  height: 30px
+  margin: 5px 0
+  padding: 5px 10px 5px 40px
+  color: #333
+  text-decoration: none
+  font-weight: bold
+  border: 1px solid #ccc
+  background: #fafafa
+  background: -webkit-linear-gradient(top, #fafafa 0%, #eee 100%)
+  background: -moz-linear-gradient(top, #fafafa 0%, #eee 100%)
+  background: linear-gradient(top, #fafafa 0%, #eee 100%)
+  -webkit-border-radius: 3px
+  border-radius: 3px
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  &:hover
+    color: #2ea8e5
+    background: #fff
+.dd-dragel > .dd3-item > .dd3-content
+  margin: 0
+.dd3-item > button
+  margin-left: 30px
+.dd3-handle
+  position: absolute
+  margin: 0
+  left: 0
+  top: 0
+  cursor: pointer
+  width: 30px
+  text-indent: 100%
+  white-space: nowrap
+  overflow: hidden
+  border: 1px solid #aaa
+  background: #ddd
+  background: -webkit-linear-gradient(top, #ddd 0%, #bbb 100%)
+  background: -moz-linear-gradient(top, #ddd 0%, #bbb 100%)
+  background: linear-gradient(top, #ddd 0%, #bbb 100%)
+  border-top-right-radius: 0
+  border-bottom-right-radius: 0
+  &:before
+    content: '≡'
+    display: block
+    position: absolute
+    left: 0
+    top: 3px
+    width: 100%
+    text-align: center
+    text-indent: 0
+    color: #fff
+    font-size: 20px
+    font-weight: normal
+  &:hover
+    background: #ddd
+/**
+ * Socialite
+.socialite
+  display: block
+  float: left
+  height: 35px
+/*===============================*/
+
+
+
+table thead th:first-child
+  width: 39px !important
+.content-wrap
+  border-radius: 5px
+  animation-name: display_show
+  animation-duration: .8s
+@keyframes display_show
+  from
+    opacity: 0
+    transform: translateY(50px)
+
+  to
+    opacity: 1
+    transform: translateY(0px)
+
+.border-dashed
+  margin: 2.5rem 0
+  border-bottom: 1px dashed #ebedf2
+
+.pr-portlet-head
+  height: 60px
+  padding: 0 25px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-bottom: 1px solid #ebedf2
+
+  .pr-portlet-head_lable h3
+    font-weight: 500
+
+  .pr-portlet-head_toolbar > li
+    position: relative
+    float: left
+    margin-right: 5px
+
+    > a
+      &:hover
+        background-color: #f2fbff
+
+      border: 1px solid #01b0ff
+      color: #01b0ff
+      padding: 9px 11px
+      border-radius: .25rem
+      cursor: pointer
+      height: 37px
+      -webkit-transition: all ease .2s
+      -ms-transition: all ease .2s
+      transition: all ease .2s
+
+    button
+      color: #01b0ff
+      padding: 9px 11px
+      border-radius: .25rem
+      cursor: pointer
+      height: 37px
+      -webkit-transition: all ease .2s
+      -ms-transition: all ease .2s
+      transition: all ease .2s
+
+    ul
+      padding: 8px 0
+      display: none
+      border-radius: 4px
+      position: absolute
+      top: 37px
+      background-color: #Fff
+      box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.1)
+
+      li
+        padding: 10px
+
+      a
+        color: #424242
+        padding: .7rem 1.2rem
+
+    i
+      padding-right: 10px
+
+    .setti
+      position: absolute
+      z-index: 1
+      top: 12px
+      left: 10px
+      color: #f4511e
+      cursor: pointer
+
+    select
+      position: relative
+      z-index: 3
+      background-color: transparent
+      color: #f4511e
+      padding: 9px 5px 9px 25px
+      border-radius: 3px
+      border: 1px solid #f4511e
+      height: 37px
+      cursor: pointer
+      font-size: 14px
+
+    button
+      color: #fff
+      border: 1px solid #5d78ff
+      padding: 11px
+      letter-spacing: .5px
+      font-weight: 600
+
+      &[type="submit"]
+        &:hover
+          background-color: #6578da
+
+        background-color: #5d78ff
+
+.pr-portlet-body
+  width: calc(100% - 400px)
+  margin: 25px auto
+
+  .config-box_title
+    margin-bottom: 15px
+
+    h2
+      color: #3d4465
+      font-weight: 500
+
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+.cursor-pointer
+  cursor: pointer
+
+.action__table
+  margin-bottom: 25px
+  display: flex
+  align-items: center
+
+  ul
+    margin-bottom: 0px
+    text-align: right
+
+    li
+      display: inline-block
+
+      a
+        color: #fff !important
+        display: block
+        border-radius: 3px
+        padding: 8px
+        text-decoration: none
+
+        i
+          padding-right: 5px
+
+        &.edit
+          background-color: #22a7f0
+
+          &:hover
+            background-color: #1896dc
+
+        &.del
+          background-color: #fa2a00
+
+          &:hover
+            background-color: #e82700
+
+        &:hover
+          text-decoration: none
+
+  .config-box_lable
+    width: 30%
+    float: left
+
+  .config-box_input
+    width: 70%
+    float: right
+
+  .config-box_text
+    color: #a1a8c3
+    font-size: 12px
+    margin-top: 2px
+    height: 3px
+
+  span
+    line-height: 30px
+    color: #646c9a
+    cursor: default
+
+  input
+    color: #495057
+    width: 100%
+    padding: 11px
+    font-size: 13px
+    border-radius: 3px
+    border: 1px solid #ebedf2
+
+  button[type="submit"]
+    padding: 10px 20px
+    background-color: #fff
+    border: 1px solid #ebedf2
+    margin-left: 10px
+
+.product_table
+  tr
+    &:last-child td
+      border-bottom: none
+
+    td:first-child
+      padding-left: 17px !important
+
+  td
+    padding: 15px 0 !important
+
+.wrap_product
+  .thumbnails
+    float: left
+    margin-right: 10px
+    a
+      font-size: 0px
+      img
+        width: 100px
+        min-height: 73px
+        border-radius: 5px
+        object-fit: cover
+  .content
+    color: #595d6e
+    font-weight: 500
+    a
+      display: -webkit-box
+      -webkit-line-clamp: 2
+      overflow: hidden
+      -webkit-box-orient: vertical
+      margin-bottom: 5px
+      font-weight: 600
+      color: #455a64
+      font-size: 14.5px
+      line-height: 1.3
+      &:hover
+        color: #3f97e6
+    p
+      padding: 5px 0
+      font-weight: 400
+    .released
+      padding-top: 5px
+      font-weight: 400
+      font-size: 12px
+      b
+        color: #455a64
+        font-weight: 500
+        font-size: 15px
+        &:last-child
+          font-size: 12px
+footer
+  background-color: #fff
+  padding: 15px
+  color: #6b6b6b
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+  svg
+    margin: 0 5px
+    width: 20px
+
+.bg-del
+  background-color: #fa2a00 !important
+
+.color-white
+  color: #fff !important
+
+nav.pagination
+  ul
+    display: flex
+    li
+      margin: 0 3px
+      a, span
+        width: 30px
+        height: 30px
+        line-height: 30px
+        padding: 0
+        display: block
+        border-radius: 50% !important
+        text-align: center
+        -webkit-transition: all ease .2s
+        -ms-transition: all ease .2s
+        transition: all ease .2s
+        &.active, &:hover
+          background-color: #178fff
+          color: #fff
+.clear::after
+  content: ""
+  clear: both
+  display: block
+.d-flex
+  display: flex
+  &.flex-between
+    justify-content: space-between
+  &.flex-align-center
+    align-items: center
+.flex-end
+  display: flex
+  justify-content: flex-end
+.selection
+  input
+    display: none
+    &:checked + .wrap_checkbox .checkbox
+      background-color: #037cff
+  .wrap_checkbox
+    border: 1px solid #037cff
+    padding: 2px
+    width: 16px
+    height: 16px
+    display: inline-flex
+    .checkbox
+      width: 10px
+      height: 10px
+.widget
+  position: relative
+  border-radius: 5px
+  overflow: hidden
+  color: #fff
+  padding: 20px
+  background-size: contain
+  background-repeat: round
+  .dimmer
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background: rgba(45, 53, 61, 0.5)
+    background: linear-gradient(135deg, rgba(45, 53, 61, 0.79), rgba(45, 53, 61, 0.5))
+  .widget-content
+    position: relative
+    h2
+      font-weight: 300
+      font-size: 25px
+      color: #ddd
+    .cricle
+      width: 100px
+      height: 100px
+      margin: 15px auto
+      border-radius: 50%
+      background: rgba(0, 0, 0, 0.3)
+      position: relative
+      svg
+        width: 45px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    p
+      line-height: 20px
+      color: #ddd
+    a
+      margin-top: 20px
+      color: #ddd
+      background-color: #0ca093
+      padding: 8px
+      border-radius: 3px
+      &:hover
+        background-color: #009688
+.widget_title
+  background-color: #3482c5
+  overflow: hidden
+  .bgc-widget
+    padding: 20px
+  h3
+    color: #fff
+    font-size: 20px
+.widget__body_admin
+  border-radius: 5px
+  background-color: #fff
+  padding: 10px
+  .title_widget
+    padding: 0 10px
+    h3
+      color: #455a64
+      font-size: 21px
+    > span
+      color: #99abb4
+  > a
+    padding: 15px 10px
+    display: block
+    width: 100%
+    transition: all ease .2s
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13)
+    &:hover
+      background-color: #f2f4f8
+    &:last-child
+      border-bottom: none
+  .user-img
+    float: left
+    margin-right: 15px
+    img
+      border-radius: 50%
+      width: 45px
+      height: 45px
+      object-fit: cover
+  .mail-content
+    h4
+      color: #455a64
+      margin-bottom: 0px
+    span
+      font-size: 12px
+      display: block
+      margin: 1px 0
+      text-overflow: ellipsis
+      color: #99abb4
+      white-space: nowrap
+::-webkit-scrollbar-track,::scrollbar-track
+  background-color: #ececec
+::-webkit-scrollbar, ::scrollbar
+  width: 12px
+  background-color: #2d363b
+::-webkit-scrollbar-thumb,::scrollbar-thumb
+  -webkit-box-shadow: inset 0 0 6px #383f48
+  box-shadow: inset 0 0 6px #383f48
+  background-color: #2d363b
+@font-face
+  font-family: "Poppins"
+  src: url("Poppins.ttf")
+.wrapper_spinner
+  position: fixed
+  z-index: 5
+  background-color: #fff
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  .spinner
+    position: fixed
+    top: 50%
+    left: 50%
+    animation: rotator 1.4s linear infinite
+@keyframes rotator
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(270deg)
+.path
+  stroke-dasharray: 187
+  stroke-dashoffset: 0
+  transform-origin: center
+  animation: dash 1.4s ease-in-out infinite,colors 5.6s ease-in-out infinite
+@keyframes colors
+  0%
+    stroke: #4285F4
+  25%
+    stroke: #DE3E35
+  50%
+    stroke: #F7C223
+  75%
+    stroke: #1B9A59
+  100%
+    stroke: #4285F4
+@keyframes dash
+  0%
+    stroke-dashoffset: 187
+  50%
+    stroke-dashoffset: 46.75
+    transform: rotate(135deg)
+  100%
+    stroke-dashoffset: 187
+    transform: rotate(450deg)
+/*button*/
+.btn-add
+  border-radius: 50px
+  background-color: #22a7f0
+  color: #fff
+  svg
+    +transi(.3s)
+  &:hover
+    color: #fff
+    background-color: #3099d2
+    svg
+      transform: rotate(45deg)
+/*Settings*/
+.tabs-js
+  margin-bottom: 0px
+  margin-left: -15px
+  li
+    float: left
+    padding: 15px 20px
+    cursor: pointer
+    border: 1px solid #f1f1f1
+    border-left: 0px
+    background-color: #f8f8f8
+    &:first-child
+      border-left: 1px solid #f1f1f1
+      &.active
+        border-left: 1px solid transparent
+    &:last-child.active
+      border-right: 0px
+    &.active
+      border-bottom: none
+      background-color: #fff
+    span
+      color: #76838f
+.Settings
+  .tab-settings
+    display: none
+  h6
+    color: #999fac
+    padding: 20px 0 10px
+    font-weight: 400
+    svg
+      width: 11px
+      margin-right: 3px
+.create_items
+
+#custom_field
+  .form-group
+    position: relative
+    svg
+      position: absolute
+      z-index: 5
+      width: 15px
+      right: 12px
+      cursor: pointer
+      color: #777777
+      top: 50%
+      transform: translateY(12%)
+      &:hover
+        color: red
+/* ========================
+ * Notifications
+ * 1. 
+/* ========================
+.notifications, .question, .fresh-chat, .dropdown
+  button
+    outline: none
+    border: none
+    cursor: pointer
+  svg
+    width: 20px
+    path
+      &:first-child
+        color: #dadde2
+      &:last-child
+        color: #adb5bd
+.question
+  .question-label
+    color: #475867
+    font-weight: 500
+    cursor: default
+    padding: 10px 0
+    margin: 0 13px
+    display: block
+  .dropdown-menu
+    .list-question
+      max-height: 300px
+      overflow-y: auto
+    .items
+      display: flex !important
+      span
+        +clamp(1)
+  .dropdown-menu svg
+    margin-right: 10px
+    min-width: 10px
+.fresh-chat
+
+/* ========================
+ * Dashbroad
+ * 1. Block Snippet
+ * 2. 
+ * 3. 
+ * 4. 
+/* ========================
+.sticky
+  width: 100%
+  background-color: #fff
+  border-radius: 4px
+  padding: 15px
+  margin-bottom: 15px
+  border: 1px solid #22a7f0
+  h3
+    color: #141c30
+    font-size: 15px
+  p
+    border-bottom: 1px dotted #dadfe3
+    padding-bottom: 10px
+    margin-bottom: 10px
+  .items
+    color: $default
+    font-weight: 500
+    display: flex
+    align-items: center
+    padding: 10px
+    border: 1px solid transparent
+    border-radius: 4px
+    margin-bottom: 10px
+    +transi(.3s)
+    svg
+      width: 20px
+      margin-right: 10px
+    &:hover
+      background-color: rgba(38, 115, 180, 0.08)
+      border: 1px solid $xanhduong
+/* ========================
+ * Inheritance
+ * 1. Dropdown Menu
+ * 2. 
+ * 3. 
+ * 4. 
+/* ========================
+.custom-menu
+  .dropdown-menu
+    width: 300px
+    padding: 0
+    border: 1px solid rgba(0, 0, 0, 0.05)
+    border-radius: 4px
+    overflow: hidden
+    box-shadow: 0 2px 4px 0 rgba(18,52,77,0.06), 0 2px 18px 0 rgba(18,52,77,0.16)
+    font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif
+    .menu-label
+      font-size: 16px
+      margin: 0
+      background: #f8f9fa
+      border-bottom: 1px solid #e0e0e0
+      padding: 13px
+    .search_question
+      padding: 5px 13px
+      position: relative
+      svg
+        width: 16px
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 22px
+      input
+        width: 100%
+        padding: 8px 8px 8px 35px
+        color: #12344D
+        background-color: #fff
+        font-weight: 500
+        box-shadow: inset 0 1px 2px 0 rgba(24,50,71,0.05)
+        border: 1px solid #CFD7DF
+        border-radius: 4px
+        +transi(.2s)
+        &:hover
+          border-color: #475867
+    .items
+      padding: 11px 17px
+      font-weight: 500
+      display: block
+      color: #12344D
+      border-bottom: 1px solid #EBEFF3
+      &:hover, &:active
+        background: #E5F2FD
+        color: #2C5CC5
+      svg
+        width: 10px
